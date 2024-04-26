@@ -1,11 +1,15 @@
 # docker构建安装mysql和redis
 
 ## 环境准备
-安装完成docker和docker-compose
+1、安装完成docker和docker-compose
 
-将`env.template`改为`.env`，可以使用命令
+2、将`env.template`改为`.env`，可以使用命令
 ```bash
 mv env.template .env
+```
+3、mysql下创建`data`文件夹
+```bash
+mkdir ./mysql/data
 ```
 ## 容器部署
 ### 1、下载镜像
