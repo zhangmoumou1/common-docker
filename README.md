@@ -3,6 +3,8 @@
 ## 环境准备
 1、安装完成docker和docker-compose
 
+若是ubuntu系统可简介此文章，[http://zhangyanc.club/article/docker_docker-compose/](http://zhangyanc.club/article/docker_docker-compose/)
+
 2、将`env.template`改为`.env`，可以使用命令
 ```bash
 mv env.template .env
