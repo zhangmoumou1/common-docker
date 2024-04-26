@@ -13,7 +13,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root123456
       TZ: Asia/Shanghai
-    command: --default-authentication-plugin=mysql_native_password
     networks:
       - backend
 
