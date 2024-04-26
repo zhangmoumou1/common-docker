@@ -26,6 +26,21 @@ docker pull redis:alpine
 ```bash
 docker-compose up -d
 ```
+执行以下命令，看到State为`up`状态说明启动成功，可以连接mysql和redis验证以下
+```bash
+root@VM-0-5-ubuntu:~/dockers/common-docker# docker-compose up -d
+WARNING: Some networks were defined but are not used by any service: frontend
+Creating network "common-docker_backend" with driver "bridge"
+Creating redis ... done
+Creating mysql ... done
+root@VM-0-5-ubuntu:~/dockers/common-docker# docker-compose ps
+WARNING: Some networks were defined but are not used by any service: frontend
+Name               Command               State                 Ports              
+----------------------------------------------------------------------------------
+mysql   docker-entrypoint.sh mysqld      Up      0.0.0.0:3306->3306/tcp, 33060/tcp
+redis   docker-entrypoint.sh sh -c ...   Up      0.0.0.0:6379->6379/tcp  
+```
+
 删除容器
 ```bash
 docker-compose down
