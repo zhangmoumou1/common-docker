@@ -48,4 +48,5 @@ docker-compose down
 
 ## 默认配置
 mysql账密：root  root123456
+
 redis秘钥：root123456
