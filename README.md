@@ -3,8 +3,10 @@
 ## 环境准备
 安装完成docker和docker-compose
 
-将`env.template`改为`.env`
-
+将`env.template`改为`.env`，可以使用命令
+```bash
+mv env.template .env
+```
 ## 容器部署
 ### 1、下载镜像
 下载mysql镜像
