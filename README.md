@@ -1,5 +1,7 @@
 # docker构建安装mysql和redis
 
+🎉 docker部署详细文档：<a href="http://zhangyanc.club/article/docker_mysql_redis/">点击查阅</a>
+
 ## 环境准备
 1、安装完成docker和docker-compose
 
